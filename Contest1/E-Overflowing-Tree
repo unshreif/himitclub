@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long K, D, N;
+    cin >> K >> D >> N;
+
+    long long lastDay = K + (N - 1) * D;
+    long long total = (K + lastDay) * N / 2;
+    cout << total << endl;
+    return 0;
+}
